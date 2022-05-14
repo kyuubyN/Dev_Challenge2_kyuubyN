@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Codar</title>
+
+    <style>
+        h1 {
+            color: rgb(0, 132, 255);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 40px;
+            text-shadow: -1px -1px 0px rgb(255, 255, 255);
+            margin-left: 40px;
+            font-weight: bold;
+        }
+
+        .botao {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(0, 89, 255);
+            border: 0;
+            line-height: 2.5;
+            padding: 0;
+            font-size: 1rem;
+            text-align: center;
+            color: #fff;
+            border-radius: 10px;
+            width: 130px;
+            display: block;
+            position: absolute;
+            margin-left: 88%;
+            margin-top: -65px;
+        }
+
+        .botao:active {
+            box-shadow: inset -2px -2px 3px rgba(182, 191, 255, 0.6),
+                inset 2px 2px 3px rgba(156, 156, 177, 0.6);
+        }
+
+        .botao:hover {
+            background-color: rgb(56, 26, 190);
+        }
+
+        .inicio {
+            display: block;
+            position: absolute;
+            margin-left: 64.5%;
+            margin-top: -60px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 23px;
+        }
+
+        .serv {
+            display: block;
+            position: absolute;
+            margin-left: 79%;
+            margin-top: -60px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 23px;
+        }
+
+        .cont {
+            display: block;
+            position: absolute;
+            margin-left: 71%;
+            margin-top: -60px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 23px;
+        }
+
+        .img1 {
+            display: block;
+            position: inherit;
+            margin-left: 10%;
+            border-radius: 90%;
+
+        }
+
+        .botao2 {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(0, 89, 255);
+            border: 0;
+            line-height: 2.5;
+            padding: 0;
+            font-size: 1rem;
+            text-align: center;
+            color: #fff;
+            border-radius: 10px;
+            width: 20%;
+            display: block;
+            position: absolute;
+            margin-top: -15%;
+            margin-left: 60%;
+        }
+
+        .botao2:active {
+            box-shadow: inset -2px -2px 3px rgba(182, 191, 255, 0.6),
+                inset 2px 2px 3px rgba(156, 156, 177, 0.6);
+        }
+
+        .botao2:hover {
+            background-color: rgb(56, 26, 190);
+        }
+
+        #alav {
+            display: block;
+            position: absolute;
+            color: rgb(0, 0, 0);
+            font-size: 22px;
+            margin-top: -25%;
+            margin-left: 60%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+
+
+        }
+
+        #webs {
+            display: block;
+            position: absolute;
+            color: rgb(0, 89, 255);
+            font-size: 50px;
+            margin-top: -22.5%;
+            margin-left: 60%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+
+        }
+
+        input[type=checkbox] {
+            height: 50px;
+            width: 20px;
+            display: inline-block;
+            margin-left: 30%;
+        }
+
+        .tel {
+            width: auto;
+            height: 40px;
+        }
+
+        .botao3 {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(0, 89, 255);
+            border: 0;
+            line-height: 2.5;
+            padding: 0;
+            font-size: 1rem;
+            text-align: center;
+            color: #fff;
+            border-radius: 10px;
+            width: 20%;
+            display: block;
+            position: absolute;
+            margin-left: 45%;
+        }
+
+        .botao3:hover {
+            background-color: rgb(56, 26, 190);
+        }
+
+        .botao3:active {
+            box-shadow: inset -2px -2px 3px rgba(182, 191, 255, 0.6),
+                inset 2px 2px 3px rgba(156, 156, 177, 0.6);
+        }
+
+        .tel {
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(137, 141, 151, 0.356);
+            color: rgb(90, 82, 82);
+            border: 0;
+            position: absolute;
+            margin-left: 28%;
+            margin-top: 0px;
+            width: 200px;
+            height: 38px;
+        }
+
+        .pzi {
+            display: block;
+            position: relative;
+            color: rgb(0, 0, 0);
+            font-size: 22px;
+            margin-top: -1%;
+            margin-left: 28%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        .img2 {
+            display: block;
+            position: inherit;
+            margin-left: 50%;
+            margin-top: -45%;
+
+        }
+
+
+        .field {
+            width: 400px;
+            border: 0;
+            background-color: rgba(137, 141, 151, 0.356);
+            border-radius: 10%;
+            position: relative;
+            margin-top: 20%;
+            margin-left: 15%;
+        }
+
+        #pz2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        #pz3 {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+        }
+
+        #pz4 {
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        .field2 {
+            width: 400px;
+            border: 0;
+            background-color: rgba(137, 141, 151, 0.356);
+            border-radius: 10%;
+            position: relative;
+            margin-top: -20%;
+            margin-left: 50%;
+        }
+
+        #pz5 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        #pz6 {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+        }
+
+        #pz7 {
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        .pe {
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><i>Codar</i><a style="color: black;">.</a></h1>
+        <nav>
+            <a href="" style="color: rgb(37, 32, 32);">
+                <p class="inicio">Início</p>
+            </a>
+            <a href="" style="color: rgb(37, 32, 32);">
+                <p class="serv">Serviços</p>
+            </a>
+            <a href="" style="color: rgb(37, 32, 32);">
+                <p class="cont">Contato</p>
+            </a>
+        </nav>
+        <label><input type="button" value="Login" class="botao"></label>
+    </header>
+    <main>
+        <section>
+            <img src="Imagem/Design sem nome (1).png" alt="Alguem no computador" title="Computador" class="img1">
+        </section>
+        <section>
+            <article>
+                <p id="alav">Alavanque seu negócio com um</p>
+                <p id="webs">Website incrível</p>
+            </article>
+            <article>
+                <label><input type="button" value="Solicitar orçamento" class="botao2"></label>
+            </article>
+        </section>
+        <section>
+            <article>
+                <label>
+                    <p style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;"><input type="checkbox" checked
+                            disabled><a style="font-weight:bold;position: relative;top:-18px">Domínio personalizado</p>
+                    </a>
+                </label>
+                <label>
+                    <p style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;"><input type="checkbox" checked
+                            disabled><a style="font-weight:bold;position: relative;top:-18px">Hospedagem</p></a>
+                </label>
+                <label>
+                    <p style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;"><input type="checkbox" checked
+                            disabled><a style="font-weight:bold;position: relative;top:-18px">Site responsivo</p></a>
+                </label>
+                <label>
+                    <p style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;"><input type="checkbox" checked
+                            disabled><a style="font-weight:bold;position: relative;top:-18px">Redes sociais</p></a>
+                </label>
+                <label>
+                    <p style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;"><input type="checkbox" checked
+                            disabled><a style="font-weight:bold;position: relative;top:-18px">Chat online</p></a>
+                </label>
+                <label>
+                    <p style="font-family: Arial, Helvetica, sans-serif;font-size: 20px;"><input type="checkbox" checked
+                            disabled><a style="font-weight:bold;position: relative;top:-18px">Blog integrado</p></a>
+                </label>
+                <br>
+                <div class="pzi">
+                    <p>Nossa equipe está à disposição!</p>
+                </div>
+                <div>
+                    <label><input type="tel" placeholder="Celular" class="tel" required></label>
+                    <label><input type="submit" class="botao3" value="Ligamos para você"></label>
+                </div>
+            </article>
+            <article>
+                <img src="Imagem/ops.png" alt="Alguem no Computador 2" title="Computador2" class="img2">
+            </article>
+        </section>
+        <section>
+            <article>
+                <fieldset class="field">
+                    <div class="star">
+                        <img src="Imagem/star.png" height="200px" style="margin-left: 50%;position: absolute;">
+                    </div>
+                    <img src="Imagem/icon.png" height="100px">
+                    <p id="pz2">"Já tive experiências com outras 4 empresas da área e a Codar é sem sombra de dúvidas
+                        superior em todos os aspectos."</p>
+                    <p id="pz3">Pedro Ferreira</p>
+                    <p id="pz4">Construtora Minari</p>
+                </fieldset>
+            </article>
+            <article>
+                <fieldset class="field2">
+                    <div class="star">
+                        <img src="Imagem/star.png" height="200px" style="margin-left: 50%;position: absolute;">
+                    </div>
+                    <img src="Imagem/icon.png" height="100px">
+                    <p id="pz5">"Processos bem simples e criação de um site exatamente como a minha escola queria!"</p>
+                    <p id="pz6">Maria Rita</p>
+                    <p id="pz7">Escola Criança Feliz</p>
+                </fieldset>
+            </article>
+        </section>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <footer class="pe">
+        <div>
+            .
+    </footer>
+</body>
+
+</html>
